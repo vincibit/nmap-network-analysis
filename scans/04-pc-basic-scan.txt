@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Fri Jun 19 21:51:55 2026 as: nmap -oN scans\\04-pc-basic-scan.txt 192.168.1.21
+Nmap scan report for arshavin-1.home (192.168.1.21)
+Host is up (0.000010s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+# Nmap done at Fri Jun 19 21:51:55 2026 -- 1 IP address (1 host up) scanned in 0.33 seconds

@@ -1,0 +1,78 @@
+# Nmap 7.80 scan initiated Fri Jun 19 21:31:48 2026 as: nmap -sV -oN scans\\03-router-service-version.txt 192.168.1.1
+Nmap scan report for funbox.home (192.168.1.1)
+Host is up (0.00059s latency).
+Not shown: 992 filtered ports
+PORT    STATE  SERVICE     VERSION
+53/tcp  open   domain      dnsmasq 2.89
+80/tcp  open   http
+113/tcp closed ident
+135/tcp closed msrpc
+139/tcp open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp open   ssl/https
+445/tcp open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+631/tcp open   ipp?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.80%I=7%D=6/19%Time=6A359930%P=i686-pc-windows-windows%r(
+SF:GetRequest,708,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:\x20must-revali
+SF:date\r\nSet-Cookie:\x20fc4718c6/accept-language=;\x20path=/;\x20SameSit
+SF:e=Strict\r\nETAG:\x20fc4718c6\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStri
+SF:ct-Transport-Security:\x20max-age=31536000;\x20includeSubDomains\r\nX-C
+SF:ontent-Type-Options:\x20nosniff\r\nContent-Type:\x20text/html;\x20chars
+SF:et=utf-8\r\nCache-Control:\x20must-revalidate\r\nContent-Length:\x20144
+SF:9\r\n\r\n<!DOCTYPE\x20html>\n<!--\x20/ht\x20Paul\x20Irish\x20-\x20http:
+SF://front\.ie/j5OMXi\x20-->\n<!--\[if\x20lt\x20IE\x207\x20\]>\x20<html\x2
+SF:0class=\"no-js\x20ie6\"\x20lang=\"pl\">\x20<!\[endif\]-->\n<!--\[if\x20
+SF:IE\x207\x20\]>\x20\x20\x20\x20<html\x20class=\"no-js\x20ie7\"\x20lang=\
+SF:"pl\">\x20<!\[endif\]-->\n<!--\[if\x20IE\x208\x20\]>\x20\x20\x20\x20<ht
+SF:ml\x20class=\"no-js\x20ie8\"\x20lang=\"pl\">\x20<!\[endif\]-->\n<!--\[i
+SF:f\x20\(gte\x20IE\x209\)\|!\(IE\)\]><!-->\n<html\x20class=\"no-js\"\x20l
+SF:ang=\"pl\">\n\x20\x20<!--<!\[endif\]-->\n\x20\x20<head>\n\x20\x20\x20\x
+SF:20<title\x20data-translation=\"common\.headtitlelogin\"></title>\n\x20\
+SF:x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;
+SF:\x20charset=UTF-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"x-dns-prefe
+SF:tch-control\"\x20content=\"off\"")%r(HTTPOptions,4D,"HTTP/1\.0\x20404\x
+SF:20Not\x20Found\r\nCache-Control:\x20must-revalidate\r\nContent-Length:\
+SF:x200\r\n\r\n")%r(RTSPRequest,4D,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCa
+SF:che-Control:\x20must-revalidate\r\nContent-Length:\x200\r\n\r\n")%r(Fou
+SF:rOhFourRequest,175,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\
+SF:x20public,max-age=31536000\r\nETAG:\x20fc4718c6\r\nX-Frame-Options:\x20
+SF:SAMEORIGIN\r\nStrict-Transport-Security:\x20max-age=31536000;\x20includ
+SF:eSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nTE:\x20chunked\r\n
+SF:Transfer-Encoding:\x20chunked\r\nContent-Type:\x20text/html\r\n\r\n58\r
+SF:\n<html><head><title>Not\x20Found</title></head><body><h1>404\x20-\x20N
+SF:ot\x20Found</h1></body></html>\n\r\n0\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.80%T=SSL%I=7%D=6/19%Time=6A359937%P=i686-pc-windows-win
+SF:dows%r(GetRequest,708,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:\x20must
+SF:-revalidate\r\nSet-Cookie:\x20fc4718c6/accept-language=;\x20path=/;\x20
+SF:SameSite=Strict\r\nETAG:\x20fc4718c6\r\nX-Frame-Options:\x20SAMEORIGIN\
+SF:r\nStrict-Transport-Security:\x20max-age=31536000;\x20includeSubDomains
+SF:\r\nX-Content-Type-Options:\x20nosniff\r\nContent-Type:\x20text/html;\x
+SF:20charset=utf-8\r\nCache-Control:\x20must-revalidate\r\nContent-Length:
+SF:\x201449\r\n\r\n<!DOCTYPE\x20html>\n<!--\x20/ht\x20Paul\x20Irish\x20-\x
+SF:20http://front\.ie/j5OMXi\x20-->\n<!--\[if\x20lt\x20IE\x207\x20\]>\x20<
+SF:html\x20class=\"no-js\x20ie6\"\x20lang=\"pl\">\x20<!\[endif\]-->\n<!--\
+SF:[if\x20IE\x207\x20\]>\x20\x20\x20\x20<html\x20class=\"no-js\x20ie7\"\x2
+SF:0lang=\"pl\">\x20<!\[endif\]-->\n<!--\[if\x20IE\x208\x20\]>\x20\x20\x20
+SF:\x20<html\x20class=\"no-js\x20ie8\"\x20lang=\"pl\">\x20<!\[endif\]-->\n
+SF:<!--\[if\x20\(gte\x20IE\x209\)\|!\(IE\)\]><!-->\n<html\x20class=\"no-js
+SF:\"\x20lang=\"pl\">\n\x20\x20<!--<!\[endif\]-->\n\x20\x20<head>\n\x20\x2
+SF:0\x20\x20<title\x20data-translation=\"common\.headtitlelogin\"></title>
+SF:\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"tex
+SF:t/html;\x20charset=UTF-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"x-dn
+SF:s-prefetch-control\"\x20content=\"off\"")%r(HTTPOptions,4D,"HTTP/1\.0\x
+SF:20404\x20Not\x20Found\r\nCache-Control:\x20must-revalidate\r\nContent-L
+SF:ength:\x200\r\n\r\n")%r(FourOhFourRequest,175,"HTTP/1\.0\x20404\x20Not\
+SF:x20Found\r\nCache-Control:\x20public,max-age=31536000\r\nETAG:\x20fc471
+SF:8c6\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Transport-Security:\x20
+SF:max-age=31536000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20no
+SF:sniff\r\nTE:\x20chunked\r\nTransfer-Encoding:\x20chunked\r\nContent-Typ
+SF:e:\x20text/html\r\n\r\n58\r\n<html><head><title>Not\x20Found</title></h
+SF:ead><body><h1>404\x20-\x20Not\x20Found</h1></body></html>\n\r\n0\r\n\r\
+SF:n")%r(RTSPRequest,4D,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control
+SF::\x20must-revalidate\r\nContent-Length:\x200\r\n\r\n");
+MAC Address: XX:XX:XX:XX:XX:XX (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun 19 21:33:27 2026 -- 1 IP address (1 host up) scanned in 99.43 seconds
